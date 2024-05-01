@@ -117,36 +117,6 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
     })
 })
 
-// Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
-//     element.addEventListener('click', (e) => {
-//         if (e.target.classList.contains('fa-circle-play')) {
-//             makeAllPlays();
-//             songIndex = parseInt(e.target.id);
-//             e.target.classList.remove('fa-circle-play');
-//             e.target.classList.add('fa-circle-pause');
-//             audioElement.src = `songs/${songIndex + 1}.mp3`;
-//             masterSongName.innerText = songs[songIndex].songName;
-//             audioElement.currentTime = 0;
-//             audioElement.play();
-//             gif.style.opacity = 1;
-//             masterPlay.classList.remove('fa-circle-play');
-//             masterPlay.classList.add('fa-circle-pause');
-//         }
-//         else {
-//             e.target.classList.remove('fa-circle-pause');
-//             e.target.classList.add('fa-circle-play');
-//             songIndex = parseInt(e.target.id);
-//             audioElement.currentTime = 0;
-//             audioElement.pause();
-
-//             gif.style.opacity = 0;
-//             masterPlay.classList.add('fa-circle-play');
-//             masterPlay.classList.remove('fa-circle-pause');
-
-//         }
-
-//     })
-// })
 
 document.getElementById('next').addEventListener('click', () => {
     if (songIndex >= 9) {
